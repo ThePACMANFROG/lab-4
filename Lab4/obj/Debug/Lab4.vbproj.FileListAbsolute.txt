@@ -1,0 +1,12 @@
+C:\Users\jacob\AppData\Local\Temporary Projects\Lab4\bin\Debug\Lab4.exe.config
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\bin\Debug\Lab4.exe.config
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.vbprojResolveAssemblyReference.cache
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.frmCarInventory.resources
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.Resources.resources
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.vbproj.GenerateResource.Cache
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.xml
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\bin\Debug\Lab4.exe
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\bin\Debug\Lab4.pdb
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\bin\Debug\Lab4.xml
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.exe
+D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.pdb
