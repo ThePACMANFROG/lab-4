@@ -22,6 +22,7 @@ Partial Class frmCarInventory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lbDisplay = New System.Windows.Forms.Label()
         Me.lvwCar = New System.Windows.Forms.ListView()
         Me.colNew = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -42,15 +43,17 @@ Partial Class frmCarInventory
         Me.btnEnter = New System.Windows.Forms.Button()
         Me.lblYear = New System.Windows.Forms.Label()
         Me.cmbYear = New System.Windows.Forms.ComboBox()
+        Me.ttToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'lbDisplay
         '
         Me.lbDisplay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbDisplay.Location = New System.Drawing.Point(40, 380)
+        Me.lbDisplay.Location = New System.Drawing.Point(12, 380)
         Me.lbDisplay.Name = "lbDisplay"
-        Me.lbDisplay.Size = New System.Drawing.Size(330, 60)
-        Me.lbDisplay.TabIndex = 20
+        Me.lbDisplay.Size = New System.Drawing.Size(358, 60)
+        Me.lbDisplay.TabIndex = 10
+        Me.ttToolTip.SetToolTip(Me.lbDisplay, "Errors will be displayed here")
         '
         'lvwCar
         '
@@ -62,7 +65,9 @@ Partial Class frmCarInventory
         Me.lvwCar.MultiSelect = False
         Me.lvwCar.Name = "lvwCar"
         Me.lvwCar.Size = New System.Drawing.Size(376, 246)
-        Me.lvwCar.TabIndex = 19
+        Me.lvwCar.TabIndex = 9
+        Me.ttToolTip.SetToolTip(Me.lvwCar, "This is where to car informatoon will be displayed and stored when enter is press" &
+        "ed")
         Me.lvwCar.UseCompatibleStateImageBehavior = False
         Me.lvwCar.View = System.Windows.Forms.View.Details
         '
@@ -99,9 +104,11 @@ Partial Class frmCarInventory
         Me.chkNew.Location = New System.Drawing.Point(69, 110)
         Me.chkNew.Name = "chkNew"
         Me.chkNew.Size = New System.Drawing.Size(53, 24)
-        Me.chkNew.TabIndex = 18
+        Me.chkNew.TabIndex = 8
+        Me.chkNew.TabStop = False
         Me.chkNew.Text = "&New:"
         Me.chkNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ttToolTip.SetToolTip(Me.chkNew, "Check if car is new")
         Me.chkNew.UseVisualStyleBackColor = True
         '
         'lblPrice
@@ -109,7 +116,7 @@ Partial Class frmCarInventory
         Me.lblPrice.Location = New System.Drawing.Point(37, 87)
         Me.lblPrice.Name = "lblPrice"
         Me.lblPrice.Size = New System.Drawing.Size(66, 13)
-        Me.lblPrice.TabIndex = 16
+        Me.lblPrice.TabIndex = 6
         Me.lblPrice.Text = "&Price:"
         Me.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -118,7 +125,7 @@ Partial Class frmCarInventory
         Me.lblModel.Location = New System.Drawing.Point(37, 34)
         Me.lblModel.Name = "lblModel"
         Me.lblModel.Size = New System.Drawing.Size(66, 13)
-        Me.lblModel.TabIndex = 14
+        Me.lblModel.TabIndex = 2
         Me.lblModel.Text = "&Model:"
         Me.lblModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.lblModel.UseWaitCursor = True
@@ -128,7 +135,7 @@ Partial Class frmCarInventory
         Me.lblMake.Location = New System.Drawing.Point(37, 7)
         Me.lblMake.Name = "lblMake"
         Me.lblMake.Size = New System.Drawing.Size(66, 13)
-        Me.lblMake.TabIndex = 12
+        Me.lblMake.TabIndex = 0
         Me.lblMake.Text = "Ma&ke: "
         Me.lblMake.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -140,29 +147,33 @@ Partial Class frmCarInventory
         Me.cmbMake.Location = New System.Drawing.Point(109, 7)
         Me.cmbMake.Name = "cmbMake"
         Me.cmbMake.Size = New System.Drawing.Size(121, 21)
-        Me.cmbMake.TabIndex = 13
+        Me.cmbMake.TabIndex = 1
+        Me.ttToolTip.SetToolTip(Me.cmbMake, "Select a make of car")
         '
         'tbPrice
         '
         Me.tbPrice.Location = New System.Drawing.Point(109, 84)
         Me.tbPrice.Name = "tbPrice"
         Me.tbPrice.Size = New System.Drawing.Size(121, 20)
-        Me.tbPrice.TabIndex = 17
+        Me.tbPrice.TabIndex = 7
+        Me.ttToolTip.SetToolTip(Me.tbPrice, "Enter in the cars price")
         '
         'tbModel
         '
         Me.tbModel.Location = New System.Drawing.Point(109, 34)
         Me.tbModel.Name = "tbModel"
         Me.tbModel.Size = New System.Drawing.Size(121, 20)
-        Me.tbModel.TabIndex = 15
+        Me.tbModel.TabIndex = 3
+        Me.ttToolTip.SetToolTip(Me.tbModel, "Enter in the cars model ")
         '
         'btnExit
         '
         Me.btnExit.Location = New System.Drawing.Point(295, 445)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnExit.TabIndex = 23
+        Me.btnExit.TabIndex = 13
         Me.btnExit.Text = "E&xit"
+        Me.ttToolTip.SetToolTip(Me.btnExit, "Press to exit")
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnReset
@@ -171,8 +182,9 @@ Partial Class frmCarInventory
         Me.btnReset.Location = New System.Drawing.Point(214, 445)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnReset.TabIndex = 22
+        Me.btnReset.TabIndex = 12
         Me.btnReset.Text = "&Reset"
+        Me.ttToolTip.SetToolTip(Me.btnReset, "Press to reset input boxes")
         Me.btnReset.UseVisualStyleBackColor = True
         '
         'btnEnter
@@ -180,8 +192,9 @@ Partial Class frmCarInventory
         Me.btnEnter.Location = New System.Drawing.Point(133, 445)
         Me.btnEnter.Name = "btnEnter"
         Me.btnEnter.Size = New System.Drawing.Size(75, 23)
-        Me.btnEnter.TabIndex = 21
+        Me.btnEnter.TabIndex = 11
         Me.btnEnter.Text = "&Enter"
+        Me.ttToolTip.SetToolTip(Me.btnEnter, "Press to enter car info into to table")
         Me.btnEnter.UseVisualStyleBackColor = True
         '
         'lblYear
@@ -189,7 +202,7 @@ Partial Class frmCarInventory
         Me.lblYear.Location = New System.Drawing.Point(37, 57)
         Me.lblYear.Name = "lblYear"
         Me.lblYear.Size = New System.Drawing.Size(66, 13)
-        Me.lblYear.TabIndex = 24
+        Me.lblYear.TabIndex = 4
         Me.lblYear.Text = "&Year:"
         Me.lblYear.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -201,12 +214,15 @@ Partial Class frmCarInventory
         Me.cmbYear.Location = New System.Drawing.Point(109, 57)
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(121, 21)
-        Me.cmbYear.TabIndex = 25
+        Me.cmbYear.TabIndex = 5
+        Me.ttToolTip.SetToolTip(Me.cmbYear, "Select a car year")
         '
         'frmCarInventory
         '
+        Me.AcceptButton = Me.btnEnter
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnReset
         Me.ClientSize = New System.Drawing.Size(390, 477)
         Me.Controls.Add(Me.lblYear)
         Me.Controls.Add(Me.cmbYear)
@@ -222,7 +238,10 @@ Partial Class frmCarInventory
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnEnter)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmCarInventory"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Car Inventory"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -249,4 +268,5 @@ Partial Class frmCarInventory
     Friend WithEvents colModel As ColumnHeader
     Friend WithEvents colYear As ColumnHeader
     Friend WithEvents colPrice As ColumnHeader
+    Friend WithEvents ttToolTip As ToolTip
 End Class

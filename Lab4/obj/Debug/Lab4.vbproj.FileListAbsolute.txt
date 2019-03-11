@@ -10,3 +10,7 @@ D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\bin\Debug\Lab4.pdb
 D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\bin\Debug\Lab4.xml
 D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.exe
 D:\School\DC\2019\Netd\Assigments\4Car\Lab4\Lab4\obj\Debug\Lab4.pdb
+C:\Users\jacob\Documents\GitHub\lab-4\Lab4\bin\Debug\Lab4.exe.config
+C:\Users\jacob\Documents\GitHub\lab-4\Lab4\obj\Debug\Lab4.exe
+C:\Users\jacob\Documents\GitHub\lab-4\Lab4\obj\Debug\Lab4.xml
+C:\Users\jacob\Documents\GitHub\lab-4\Lab4\obj\Debug\Lab4.pdb
